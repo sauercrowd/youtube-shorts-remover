@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Shorts remover",
+  "description": "Remove Shorts from the youtube homepage",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://youtube.com/results"],
+      "js": ["youtube_shorts_remover.js"]
+    }
+  ]
+}
